@@ -20,7 +20,7 @@ class Icecream(models.Model):
     flavor = models.CharField(max_length = 50)
     base = models.CharField(max_length = 11, choices=BASE)
     available = models.CharField(max_length=9, choices=AVAILABLE)
-    Featured_Flavor = models.BooleanField(choices=BOOL)
+    Featured = models.BooleanField(choices=BOOL)
     date_churned = models.DateField(default=datetime.date.today)
 
     def __str__(self):
@@ -28,4 +28,4 @@ class Icecream(models.Model):
 
     def get_absolute_url(self):
         return reverse('icecream:index')
-
+    
