@@ -1,0 +1,16 @@
+{% extends 'brochure/base.html' %}
+{% block content %}
+<h3>{{ icecream.flavor }}</h3>
+<div class="row no-gutters">
+    <div class="col">Ice Cream Base: <strong>{{ icecream.base }}</strong></div>
+</div>
+<div class="row no-gutters">
+    <div class="col">Availability: <strong>{{ icecream.available }}</strong></div>
+</div>
+<div class="row no-gutters">
+    <div class="col">Featured Flavor: <strong>{{ icecream.Featured_Flavor }}</strong></div>
+</div>
+<div class="row no-gutters">
+    <div class="col">Churned on: <strong>{{ icecream.date_churned }}</strong></div>
+</div>
+{% endblock content %}

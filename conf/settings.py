@@ -84,6 +84,9 @@ DATABASES = {
     }
 }
 
+STATICFILES_DIRS = [
+    "documents/code/7-2-ice-cream-shop/brochure/static"
+]
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
