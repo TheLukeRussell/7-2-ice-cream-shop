@@ -1,4 +1,4 @@
-from django.view import generic
+from django.views import generic
 
 from .models import Icecream
 
