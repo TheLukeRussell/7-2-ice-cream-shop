@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.view import generic
 
-# Create your views here.
+from .models import Icecream
+
+class IndexView(generic.ListView):
+    template_name = 'icecream/index.html'
+    model = Icecream

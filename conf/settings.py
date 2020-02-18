@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #local
-    'brochure.apps.BrochureConfig'
+    'brochure.apps.BrochureConfig',
+    'icecream.apps.IcecreamConfig',
 ]
 
 MIDDLEWARE = [
