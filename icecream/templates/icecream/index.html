@@ -1,0 +1,8 @@
+{% extends 'brochure/base.html' %}
+
+{% block content %}
+<h1>Ice Cream Page!!</h1>
+{% for icecream in object_list %}
+<p>{{ icecream.flavor }}</p>
+{% endfor %}
+{% endblock content %}
