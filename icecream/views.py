@@ -1,4 +1,6 @@
 from django.views import generic
+from django.urls import reverse_lazy
+from django.conf import settings
 
 from .models import Icecream
 
@@ -16,21 +18,21 @@ class CreateView(generic.CreateView):
     fields = '__all__'
 
 class DailyFlavorView(generic.ListView):
-    template_name = 'daily_flavors.html'
+    template_name = 'icecream/daily_flavors.html'
     model = Icecream
     queryset = Icecream.objects.filter(available='Daily')
 
 class WeeklyFlavorView(generic.ListView):
-    template_name = 'weekly_flavors.html'
+    template_name = 'icecream/weekly_flavors.html'
     model = Icecream
     queryset = Icecream.objects.filter(available='Weekly')
 
 class SeasonalFlavorView(generic.ListView):
-    template_name = 'seasonal_flavors.html'
+    template_name = 'icecream/seasonal_flavors.html'
     model = Icecream
     queryset = Icecream.objects.filter(available='Seasonal')
 
 class FeaturedFlavorView(generic.ListView):
-    template_name = 'featured_flavors.html'
+    template_name = 'icecream/featured_flavors.html'
     model = Icecream
     queryset = Icecream.objects.filter(Featured=True)

@@ -2,6 +2,12 @@
 
 {% block content %}
 <h1>Ice Cream Page!!</h1>
+<div class="row no-gutters">
+<a class="col-3" href="{% url 'icecream:daily_flavors' %}"><h2 id='filter-item'>Daily</h2></a>
+<a class="col-3" href="{% url 'icecream:weekly_flavors' %}"><h2 id='filter-item'>Weekly</h2></a>
+<a class="col-3" href="{% url 'icecream:seasonal_flavors' %}"><h2 id='filter-item'>Seasonal</h2></a>
+<a class="col-3" href="{% url 'icecream:featured_flavors' %}"><h2 id='filter-item'>Featured</h2></a>
+</div>
 {% for icecream in object_list %}
 <div class="row no-gutters">
 <div class="col">

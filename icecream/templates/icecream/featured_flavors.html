@@ -1,7 +1,8 @@
-{% extends 'brochure/base.html' %}
+{% extends 'icecream/index.html' %}
 
 {% block content %}
 <h2>FEATURED FLAVORS</h2>
 {% for icecream in object_list %}
+<div class="col">{{ icecream.flavor }}</div>
 {% endfor %}
 {% endblock content %}
