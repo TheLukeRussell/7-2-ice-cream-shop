@@ -3,6 +3,8 @@
 {% block content %}
 <h2>WEEKLY FLAVORS</h2>
 {% for icecream in object_list %}
-<div class="col">{{ icecream.flavor }}</div>
+<p class="flavor-list">
+<a id='flavors' href="{% url 'icecream:detail' icecream.id %}" >{{icecream.flavor}}</a>
+</p>
 {% endfor %}
 {% endblock content %}
