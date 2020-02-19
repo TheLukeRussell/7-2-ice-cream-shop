@@ -8,6 +8,7 @@ urlpatterns = [
     path('', views.IndexView.as_view(), name = 'index'),
     path('<int:pk>/', views.DetailView.as_view(), name = 'detail'),
     path('add/', views.CreateView.as_view(), name = 'create'),
+    path('all_flavors/', views.AllFlavorView.as_view(), name = 'all_flavors'),
     path('daily_flavors/', views.DailyFlavorView.as_view(), name = 'daily_flavors'),
     path('weekly_flavors/', views.WeeklyFlavorView.as_view(), name = 'weekly_flavors'),
     path('seasonal_flavors/', views.SeasonalFlavorView.as_view(), name = 'seasonal_flavors'),

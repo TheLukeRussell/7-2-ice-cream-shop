@@ -28,4 +28,6 @@ class Icecream(models.Model):
 
     def get_absolute_url(self):
         return reverse('icecream:index')
-    
+
+    class Meta:
+        ordering = ['flavor']

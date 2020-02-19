@@ -1,25 +1,18 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Ice Cream Page!!</h1>
+<h1>Check out our Ice Cream Lists!</h1>
 <div id='test' class="row">
-<div class='col-md-12 col-lg' id='nav'>
-    <a href="{% url 'icecream:daily_flavors' %}"><h2>Daily</h2></a>
+    <a class="col-12" id='nav' href="{% url 'icecream:daily_flavors' %}"><h2>Daily</h2></a>
+    <a class="col-12" id='nav' href="{% url 'icecream:weekly_flavors' %}"><h2>Weekly</h2></a>
+    <a class="col-12" id='nav' href="{% url 'icecream:seasonal_flavors' %}"><h2>Seasonal</h2></a>
+    <a class="col-12" id='nav' href="{% url 'icecream:featured_flavors' %}"><h2>Featured</h2></a>
+    <a class="col-12" id='nav' href="{% url 'icecream:all_flavors' %}"><h2>All Flavors</h2></a>
 </div>
-<div class='col-md-12 col-lg' id='nav'>
-    <a href="{% url 'icecream:weekly_flavors' %}"><h2>Weekly</h2></a>
-</div>
-<div class='col-md-12 col-lg' id='nav'>
-    <a href="{% url 'icecream:seasonal_flavors' %}"><h2>Seasonal</h2></a>
-</div>
-<div class='col-md-12 col-lg' id='nav'>
-    <a href="{% url 'icecream:featured_flavors' %}"><h2>Featured</h2></a>
-</div>
-</div>
-<h4>Full Flavor List</h4>
+<!-- <h4>Full Flavor List</h4>
 {% for icecream in object_list %}
 <p class="flavor-list">
     <a id='flavors' href="{% url 'icecream:detail' icecream.id %}">{{icecream.flavor}}</a>
 </p>
-{% endfor %}
+{% endfor %} -->
 {% endblock content %}
