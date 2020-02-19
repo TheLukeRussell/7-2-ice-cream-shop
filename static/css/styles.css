@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather|Montserrat|Playfair+Display&display=swap');
+
 body {
-    /* background: radial-gradient(circle, #C38D9E 0%, #85DCB0 100%); */
-    background-color: #7EC6B8;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(126,198,184,1) 50%);
+    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 #header {
     padding: 20px;
-    background-color:#e27d60;
+    background-color:#41B3A3;
     text-align: center;
 }
 
@@ -16,11 +21,37 @@ body {
 #header a{
     color: #FFF;
     font-size: 22px;
+    text-decoration: none;
+}
+
+#header a:hover {
+    color: #E8A87C;
+    transition: ease .5s;
+}
+
+#footer div.col {
+    background-color:#000;
+    text-align: center;
+    margin-top: 100px;
+    padding: 30px 0px;
+}
+
+#footer a{
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#footer a:hover{
+    color: #E8A87C;
+    transition: ease .5s;
 }
 
 h1 {
     text-align: center;
-    padding: 30px;
+    padding:50px;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
 }
 
 #flavors {
@@ -46,15 +77,17 @@ h4 {
     text-align: center;
     font-size: 36px;
     margin: 50px;
+    font-family: 'Lato', sans-serif;
 }
 
 h2 {
     text-align: center;
     padding: 20px;
+    font-family: 'Arvo', serif;
 }
 
 #nav {
-    background-color: #85DCB0;
+    background-color: #e27d60;
     display: inline-block;
     color: #fff;
     border-radius: 6px;
