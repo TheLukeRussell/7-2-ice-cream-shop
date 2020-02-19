@@ -17,6 +17,16 @@ class CreateView(generic.CreateView):
     model = Icecream
     fields = '__all__'
 
+class DeleteView(generic.DeleteView):
+    template_name = 'icecream/delete.html'
+    model = Icecream
+    success_url = reverse_lazy('icecream/detail.html')
+
+class UpdateView(generic.UpdateView):
+    template_name = 'icecream/update.html'
+    model = Icecream
+    fields = '__all__'
+
 class DailyFlavorView(generic.ListView):
     template_name = 'icecream/daily_flavors.html'
     model = Icecream

@@ -13,4 +13,6 @@
 <div id='detail-row'class="row no-gutters">
     <div id='detail-item' class="col">Churned on: <strong>{{ icecream.date_churned }}</strong></div>
 </div>
+<a href="{% url 'icecream:delete' icecream.id %}">Delete Flavor</a>
+<a href="{% url 'icecream:update' icecream.id %}">Update Flavor</a>
 {% endblock content %}
