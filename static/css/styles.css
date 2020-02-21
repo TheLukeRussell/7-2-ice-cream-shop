@@ -65,7 +65,7 @@ body {
 
 h1 {
     text-align: center;
-    padding:50px;
+    padding:20px;
     font-size: 60px;
     font-family: 'Playfair Display', serif;
 }
@@ -153,4 +153,22 @@ h2 {
 
 #nav:hover {
     background-color: #8dcdee;
+}
+
+h5 {
+    background-color: #71C6F2;
+    width: 50%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    /* position: relative; */
+    width: 80%;
+    margin: 10px auto;
+    /* height: 60%; */
 }
