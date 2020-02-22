@@ -6,3 +6,6 @@ class IndexView(generic.TemplateView):
 
 class AboutView(generic.TemplateView):
     template_name = 'about.html'
+
+class ContactUsView(generic.TemplateView):
+    template_name = 'contact_us.html'

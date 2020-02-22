@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>By Phone:</h3>
+<p style="text-align: center;">
+Call 864-867-5309 Monday - Friday, 8:30am - 2:30pm EST. (Ask for Customer Service Desk)
+<br>
+Greenville, SC Factory Tours Info: 864-501-6210 or toll free (864) SS-CREAM (864-272-7326)
+<br>
+Ownership Opportunities: 864-555-0123</p>
+<h3>By Mail:</h3>
+<p style="text-align: center;">Carolina Code School
+<br>
+411 University Ridge, Suite 235
+<br>
+Greenville, SC 29601</p>
+<h3>Online:</h3>
+<p style="text-align: center;">Send a Message!</p>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="row no-gutters mb-3">
+        <input placeholder=' Type message here...' type="text" class='m-auto col-8'></input>
+    </div>
+    <div class="row no-gutters form-actions">
+        <button class='m-auto col-1 btn btn-primary'>Send</button>
+    </div>
+</form>
+{% endblock content %}
